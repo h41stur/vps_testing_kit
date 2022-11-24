@@ -91,7 +91,7 @@ bash ./iptables.sh
 
 # OPENVPN
 
-bash < <(curl -s https://git.io/vpn)
+bash ./openvpn-install.sh
 
 # SSH
 

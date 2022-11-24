@@ -56,7 +56,7 @@ RESET=$( tput sgr0 )
 BOLDM=$( tput bold )
 UNDER=$( tput smul )
 REVRS=$( tput rev )
-MYIP=$(curl 'https://api.ipify.org')
+MYIP=$(curl -s 'https://api.ipify.org')
 if [ "$PS1" ]; then
 		  # PS1="[\u@\h:\l \W]\\$ "
 		  PS1="\[$FGCYN\]╭──\[$RESET\][\[$FGYLO\]\u\[$FGCYN\]💀\[$FGGRN\]$MYIP\[$RESET\]]-[\[$FGBLU\]\W\[$RESET\]]\n\[$FGCYN\]╰─➤\[$RESET\] \\\$ "
